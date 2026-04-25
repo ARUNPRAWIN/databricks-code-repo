@@ -11,4 +11,20 @@ spark.sql(f"select * from {table_name}").show(2)
 
 # COMMAND ----------
 
+spark.sql("SELECT current_database()").show()
+
+# COMMAND ----------
+
+spark.sql("SHOW TABLES").show()
+
+# COMMAND ----------
+
+# MAGIC %sh
+# MAGIC ls -l /databricks-datasets/airlines
+# MAGIC
+# MAGIC head /databricks-datasets/airlines/part-00000
+
+# COMMAND ----------
+
 dbutils.notebook.exit("success")
+
